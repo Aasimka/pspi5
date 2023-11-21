@@ -12,8 +12,8 @@ public class MyApplication extends JFrame {
     JFrame f;
     JScrollPane scrolltxt;
     int k;
-    Object boxA, boxB, boxC;
-    File file = new File("C:\\Users\\chabr\\Desktop\\labik5\\src\\production\\Registration.txt");
+    Object boxC;
+    File file = new File("Registration.txt");
     static JLabel l1, l2, l3, l4, l5;
     JComboBox box_3;
     JRadioButton flag1, flag2;
@@ -49,6 +49,7 @@ public class MyApplication extends JFrame {
         bg.add(flag2);
 
         setLayout(null);
+
         b.setSize(200,30);
         b.setLocation(150, 400);
         del.setSize(100, 30);

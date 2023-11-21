@@ -12,9 +12,9 @@ public class MyApplication extends JFrame {
     int k = 0;
     JRadioButton ch1, ch2, ch3;
     ButtonGroup bg;
-    String[] data1 = {"one", "two", "three", "four"};
-    String[] data2 = {"1", "2", "3"};
-    String[] data3 = {"one", "two"};
+    String[] data1 = {"красный", "черный", "фиолетовый", "зеленый"};
+    String[] data2 = {"78", "25", "93"};
+    String[] data3 = {"билет", "тетрадь"};
     String[] extraData = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
     String[] empty = {""};
     String s;
@@ -29,9 +29,9 @@ public class MyApplication extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
-        add = new JButton("Add 10 elements");
-        move = new JButton("Move elements");
-        del = new JButton("Clear");
+        add = new JButton("Добавить 10 элементов");
+        move = new JButton("Перенести элементы");
+        del = new JButton("Очистить");
         ch1 = new JRadioButton("1");
         ch2 = new JRadioButton("2");
         ch3 = new JRadioButton("3");
@@ -61,10 +61,6 @@ public class MyApplication extends JFrame {
         ch2.setLocation(330, 220);
         ch3.setSize(100, 20);
         ch3.setLocation(530, 220);
-
-        JScrollPane scrollPane = new JScrollPane(list2);
-        getContentPane().add(scrollPane);
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
         add(add);
         add(move);
@@ -125,7 +121,6 @@ public class MyApplication extends JFrame {
             k = 0;
             if (e.getSource() == ch1) {
                 k = 1;
-
             } else if (e.getSource() == ch2) {
                 k = 2;
             } else if (e.getSource() == ch3) {
@@ -138,7 +133,7 @@ public class MyApplication extends JFrame {
         public void actionPerformed(ActionEvent e) {
             if (k == 1) {
                 data1 = empty;
-                list1.setListData(data1);
+                list1.setListData(empty);
             } else if (k == 2) {
                 data2 = empty;
                 list2.setListData(empty);
