@@ -13,7 +13,7 @@ public class MyApplication extends JFrame {
     JScrollPane scrolltxt;
     int k;
     Object boxA, boxB, boxC;
-    File file = new File("C://Users//chabr//Desktop//ПСП//лаб5//Registration.txt");
+    File file = new File("C:\\Users\\chabr\\Desktop\\labik5\\src\\production\\Registration.txt");
     static JLabel l1, l2, l3, l4, l5;
     JComboBox box_3;
     JRadioButton flag1, flag2;
