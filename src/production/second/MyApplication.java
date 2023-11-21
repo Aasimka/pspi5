@@ -9,8 +9,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class MyApplication extends JFrame {
-    JFrame f;
-    JScrollPane scrolltxt;
     int k;
     Object boxC;
     File file = new File("Registration.txt");
