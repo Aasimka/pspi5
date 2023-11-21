@@ -13,7 +13,7 @@ public class MyApplication extends JFrame {
     JScrollPane scrolltxt;
     int k;
     Object boxA, boxB, boxC;
-    File file = new File("C://172301//3 курс//5 сем//ПСП//Лаба 5//Registration.txt");
+    File file = new File("C://Users//chabr//Desktop//ПСП//лаб5//Registration.txt");
     static JLabel l1, l2, l3, l4, l5;
     JComboBox box_3;
     JRadioButton flag1, flag2;
@@ -30,16 +30,16 @@ public class MyApplication extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         b = new JButton("Внесение в базу");
-        del = new JButton("Очистить");
+        del = new JButton("Очистить!");
         text = new JTextField(9);
         author = new JTextField(9);
         area = new JTextArea(9, 9);
         JScrollPane scroll = new JScrollPane(area,JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-        l1 = new JLabel("Название книги");
-        l2 = new JLabel("Описание сюжета");
-        l3 = new JLabel("Дата выпуска");
-        l4 = new JLabel("Есть физический вариант");
-        l5 = new JLabel("Автор");
+        l1 = new JLabel("Название книги:");
+        l2 = new JLabel("Описание сюжета:");
+        l3 = new JLabel("Дата выпуска:");
+        l4 = new JLabel("Есть физический вариант?");
+        l5 = new JLabel("Автор:");
 
         box_3 = new JComboBox<Object>(box3);
         flag1 = new JRadioButton("да");
